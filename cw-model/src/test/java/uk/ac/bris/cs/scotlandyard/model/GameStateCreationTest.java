@@ -160,7 +160,7 @@ public class GameStateCreationTest extends ParameterisedModelTestBase {
 				redPlayer(),
 				greenPlayer(),
 				bluePlayer());
-		assertThat(state.getPlayers()).containsExactly(MRX, RED, GREEN, BLUE);
+		assertThat(state.getPlayers()).containsExactlyInAnyOrder(MRX, RED, GREEN, BLUE);
 	}
 
 	@Test public void testWinningPlayerIsEmptyInitially() {
