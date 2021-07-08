@@ -7,12 +7,11 @@ import javax.annotation.Nonnull;
 import com.google.common.collect.ImmutableSet;
 import uk.ac.bris.cs.scotlandyard.model.ScotlandYard.Factory;
 
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * cw-model
- * Stage 2: Complete this class
  */
 public final class MyModelFactory implements Factory<Model> {
 
@@ -35,7 +34,6 @@ public final class MyModelFactory implements Factory<Model> {
 		/**
 		 * Registers an observer to the model. It is an error to register the same observer more than
 		 * once.
-		 *
 		 * @param observer the observer to register
 		 */
 		@Override
@@ -46,9 +44,7 @@ public final class MyModelFactory implements Factory<Model> {
 		}
 
 		/**
-		 * Unregisters an observer to the model. It is an error to unregister an observer not
-		 * previously registered with {@link #registerObserver(Model.Observer)}.
-		 *
+		 * Unregisters an observer to the model
 		 * @param observer the observer to register
 		 */
 		@Override
